@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Mobile App Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I denne opgave skal du sætte en præsentationsside op for en mobil applikation.
 
-## Available Scripts
+## Formål
 
-In the project directory, you can run:
+Formålet med opgaven er at få øvelse i
 
-### `npm start`
+* Opsætning af et React projekt
+* Opsætning af tests
+* Kodning af design med HTML (JSX) og CSS (SASS/SCSS)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Krav
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Du skal som altid kode designet så det ligner så meget som muligt. Husk, at projektet skal ikke kodes "pixel-perfect",
+men du skal tænke over, hvordan de forskellige elementer på siden opfører sig på større og mindre skærme.
 
-### `npm test`
+### Tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Du skal sætte en automatiseret test op for komponentet, der viser Twitter-brugeres udtalelser om produktet. Dvs en unit test med Jest/Testing-library. som tester om det komponent, der viser udtalelsen virker korrekt.
 
-### `npm run build`
+Test følgende:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Twitter-kortet indeholder det korrekte billede.
+* Twitter-kortet indeholder den korrekte tekst.
+* Twitter-kortet indeholder det korrekte navn.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Sæt din test op med en mock af APIet (som i virkeligheden "bare" er en JSON-fil)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+___*Du skal have godkendt din test af din lærer før du går i gang med at kode selve projektet.*___ Det betyder, at din tilgang her er Test Driven Design (TDD).
 
-### `npm run eject`
+### Resten
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Resten af siden skal kodes responsivt i forhold til de to design i figma filen.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* React
+* SASS
+* Prettier / ESLint
+* Axios
+* react-grid-carousel (https://www.npmjs.com/package/react-grid-carousel)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Deployment
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Din opgave skal deployes til Netlify.
